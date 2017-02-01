@@ -1,0 +1,455 @@
+.wrapper
+	.main_content
+			//============header============
+			header.header
+				.container
+					.company_logo
+						.company_name ООО «КЕРАМИКА»
+						img.company_logo_pic(src='./assets/img/logo.png' alt='логотип компании')
+						.company_link kirpich-keramika.ru
+					
+					h1.main_title Кирпич с доставкой по Казани и Татарстану
+
+					.company_contacts 
+						h2.call_title Звоните
+						.company_phone 8(843) 2-530-560
+						a.contact_btn(href='#') Заказать звонок
+						.post_scriptum (заявки с сайта принимаются круглосуточно)
+
+			
+			.content
+				//=========navigation=========
+				nav.main_menu
+					.container
+						ul.menu__list
+							li.menu__item
+								a.menu__link(href="#assort") Ассортимент
+							li.menu__item
+								a.menu__link(href="#scheme") Схема работы
+							li.menu__item
+								a.menu__link(href="#payment") Способы оплаты	
+							li.menu__item
+								a.menu__link(href="#advant") Преимущества
+							li.menu__item
+								a.menu__link(href="#obj") Реализованные объекты
+							li.menu__item
+								a.menu__link(href="#contacts") Контакты
+				
+				//============main content=====
+				main.main
+
+					//============slider=========
+					section.slider_section
+						.slider.fotorama(data-width='100%' data-height='500px' data-transition='crossfade' data-loop='true' data-autoplay='4500' data-arrows='false' data-fit='cover' data-nav='false')
+							.slider__item
+								img.slider_img(src='./assets/img/slide1.jpg')
+								.overlay
+									.slider_text Официальный диллер Кощаковского кирпичного завода
+							.slider__item
+								img.slider_img(src='./assets/img/slide2.jpg')
+								.overlay
+									.slider_text Закажите Кощаковский кирпич на 20% ниже заводской цены
+						a.contact_btn.slider__btn(href='#') Узнать подробнее
+					
+
+					//==========assortment========
+					section.assortment#assort
+						.container
+							h2.section_title Ассортимент кирпичей
+							.section_title_ps (цены указаны с учетом стоимости поддона)
+							.assort
+								.assort__list
+									.assort__item
+										.brick_name Кирпич одинарный полнотелый
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick1-2.jpg')
+										.brick_mark Марка: 
+											span М-100
+										.brick_color Цвет: 
+											span красный
+										.brick_size Размер, мм:  
+											span 250*120*65
+										.brick_number 1 поддон:  
+											span 320 шт
+										.brick_temperature Морозостойкость:  
+											span F 35
+										.brick_manufacturer Производитель:  
+											span Воткинский КЗ
+										.brick_price Цена: 
+											span 9,50 руб
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Кирпич одинарный полнотелый
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick1-2.jpg')
+										.brick_mark Марка: 
+											span М-125
+										.brick_color Цвет: 
+											span красный
+										.brick_size Размер, мм:  
+											span 250*120*65
+										.brick_number 1 поддон:  
+											span 320 шт
+										.brick_temperature Морозостойкость:  
+											span 35F
+										.brick_manufacturer Производитель:  
+											span Воткинский КЗ
+										.brick_price Цена: 
+											span 9,50 руб
+										.brick_price_ps (цены указаны с учетом поддона)	
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Кирпич одинарный полнотелый
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick3.jpg')
+										.brick_mark Марка: 
+											span М-100
+										.brick_color Цвет: 
+											span красный
+										.brick_size Размер, мм:  
+											span 250*120*65
+										.brick_number 1 поддон:  
+											span 400 шт
+										.brick_temperature Морозостойкость:  
+											span 35F
+										.brick_manufacturer Производитель:  
+											span ОАО Казанский КСМ
+										.brick_price Цена: 
+											span 9,90 руб
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Кирпич лицевой полуторный
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick4.jpg')
+										.brick_mark Марка: 
+											span М-175
+										.brick_color Цвет: 
+											span шоколад
+										.brick_size Размер, мм:  
+											span 250х120х88
+										.brick_number 1 поддон:  
+											span 308 шт
+										.brick_temperature Морозостойкость:  
+											span 100 циклов
+										.brick_manufacturer Производитель:  
+											span Магма, г. Саранск
+										.brick_price Цена: 
+											span уточняйте у менеджера
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Кирпич лицевой одинарный
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick5.jpg')
+										.brick_mark Марка: 
+											span М-150
+										.brick_color Цвет: 
+											span солома
+										.brick_size Размер, мм:  
+											span 250*120*65
+										.brick_number 1 поддон:  
+											span 384 шт
+										.brick_temperature Морозостойкость:  
+											span 75F
+										.brick_manufacturer Производитель:  
+											span  Кощаковский КЗ
+										.brick_price Цена: 
+											span 14,40 руб
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Кирпич лицевой полуторный
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick6.jpg')
+										.brick_mark Марка: 
+											span М-150
+										.brick_color Цвет: 
+											span солома
+										.brick_size Размер, мм:  
+											span 250*120*88
+										.brick_number 1 поддон:  
+											span 288 шт
+										.brick_temperature Морозостойкость:  
+											span 75F
+										.brick_manufacturer Производитель:  
+											span Кощаковский КЗ
+										.brick_price Цена: 
+											span 17,70 руб
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Кирпич лицевой одинарный
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick7.jpg')
+										.brick_mark Марка: 
+											span М-150
+										.brick_color Цвет: 
+											span шоколад
+										.brick_size Размер, мм:  
+											span 250*120*65
+										.brick_number 1 поддон:  
+											span 444 шт
+										.brick_temperature Морозостойкость:  
+											span 100 циклов
+										.brick_manufacturer Производитель:  
+											span Керма, г Нижний Новгород
+										.brick_price Цена: 
+											span уточняйте у менеджера
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Кирпич лицевой полуторный
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick8.jpg')
+										.brick_mark Марка: 
+											span М-150
+										.brick_color Цвет: 
+											span красный
+										.brick_size Размер, мм:  
+											span 250*120*88
+										.brick_number 1 поддон:  
+											span 288 шт
+										.brick_temperature Морозостойкость:  
+											span 75F
+										.brick_manufacturer Производитель:  
+											span Кощаковский КЗ
+										.brick_price Цена: 
+											span 14,00 руб
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Кирпич лицевой одинарный
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick9.jpg')
+										.brick_mark Марка: 
+											span М-150
+										.brick_color Цвет: 
+											span красный
+										.brick_size Размер, мм:  
+											span 250*120*65
+										.brick_number 1 поддон:  
+											span 384 шт
+										.brick_temperature Морозостойкость:  
+											span 75F
+										.brick_manufacturer Производитель:  
+											span Кощаковский КЗ
+										.brick_price Цена: 
+											span 10,90 руб
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+
+									.assort__item
+										.brick_name Рядовой блок  2 НФ
+										.brick_ava
+											img.brick_pic(src='./assets/img/brick10.jpg')
+										.brick_mark Марка: 
+											span М-150
+										.brick_color Цвет: 
+											span красный
+										.brick_size Размер, мм:  
+											span 250*120*130
+										.brick_number 1 поддон:  
+											span 192 шт
+										.brick_temperature Морозостойкость:  
+											span 
+										.brick_manufacturer Производитель:  
+											span Кощаковский КЗ
+										.brick_price Цена: 
+											span 12,50 руб
+										.brick_price_ps (цены указаны с учетом поддона)
+										a.contact_btn.contact_btn_assort(href='#') Заказать
+					//======works scheme==========
+					section.works_scheme#scheme
+						.container
+							h2.section_title Схема работы
+							ul.scheme__list.point__list
+								li.scheme__item.point__item
+									.scheme__item__ava.point__ava
+										img.scheme__img.point__pic(src='./assets/img/icons/phone.png' alt='телефона')
+									.scheme__def.point__def Вы звоните или оставляете заявку
+								li.scheme__item.point__item
+									.scheme__item__ava.point__ava
+										img.scheme__img.point__pic(src='./assets/img/icons/calendar.png' alt='календаря')
+									.scheme__def.point__def Мы согласовываем количество и сроки доставки
+								li.scheme__item.point__item
+									.scheme__item__ava.point__ava
+										img.scheme__img.point__pic(src='./assets/img/icons/truck.png' alt='грузовика')
+									.scheme__def.point__def Доставляем вам кирпич
+								li.scheme__item.point__item
+									.scheme__item__ava.point__ava
+										img.scheme__img.point__pic(src='./assets/img/icons/manipulator.jpg' alt='манипулятор')
+									.scheme__def.point__def Разгружаем кирпич с помощью манипулятора
+								li.scheme__item.point__item
+									.scheme__item__ava.point__ava
+										img.scheme__img.point__pic(src='./assets/img/icons/handshake.png' alt='рукопожатие')
+									.scheme__def.point__def Вы получаете кирпич и оплачиваете заказ
+
+					//=========payment method=====
+					section.payment_method#payment
+						.container
+							h2.section_title Способы оплаты
+							ul.payment__list.point__list
+								li.payment__item.point__item
+									.payment__ava.point__ava
+										img.payment_pic.point__pic(src='./assets/img/icons/wallet.png' alt='кошелёк')
+									h3.payment__title Наличными в офисе
+									.payment__def.point__def Вы можете посетить наш офис и оплатить стоимость кирпича и сопутствующих материалов наличными
+								li.payment__item.point__item
+									.payment__ava.point__ava
+										img.payment_pic.point__pic(src='./assets/img/icons/cash.png' alt='наличные')
+									h3.payment__title Наличными экспедитору
+									.payment__def.point__def После отгрузки кирпичей на объекте вы можете оплатить наличными экспедитору
+								li.payment__item.point__item
+									.payment__ava.point__ava
+										img.payment_pic.point__pic(src='./assets/img/icons/cards.png' alt='карточки')
+									h3.payment__title На банковскую карту
+									.payment__def.point__def После согласования заказа вы можете перевести деньги нам на карту любым удобным для вас способом
+								li.payment__item.point__item
+									.payment__ava.point__ava
+										img.payment_pic.point__pic(src='./assets/img/icons/bank.png' alt='банк')
+									h3.payment__title На расчетный счет
+									.payment__def.point__def Вы так же можете оплатить заказ переводом на расчетный счёт
+
+					//========why we==============
+					section.why_we
+						.overlay_w
+							.container
+								h2.why_we_title Мы осуществим бесперебойное снабжение ваших строительных объектов
+								.why_we_text ООО «КЕРАМИКА» - бесперебойное обеспечение качественными кирпичами объектов любой величины: от индивидуальных застройщиков до строительных предприятий
+								a.why_we__btn.contact_btn(href='#') Заказать кирпич
+
+						//========our advantage=======
+					section.advantage#advant
+						.container
+							h2.section_title Наши преимущества
+							ul.advantage__list.point__list
+								li.advantage__item.point__item
+									.advantage__ava.point__ava
+										img.advantage__pic(src='./assets/img/icons/money.png' alt='деньги')
+									.advantage__def.point__def Оплата по факту отгрузки
+								
+								li.advantage__item.point__item
+									.advantage__ava.point__ava
+										img.advantage__pic(src='./assets/img/icons/manipulate.png' alt='манипулятор')
+									.advantage__def.point__def Доставка манипулятором. Вам не придется самим разгружать кирпич
+								
+								li.advantage__item.point__item
+									.advantage__ava.point__ava
+										img.advantage__pic(src='./assets/img/icons/checked.png' alt='проверено')
+									.advantage__def.point__def Качественный кирпич соответствует ГОСТ
+								
+								li.advantage__item.point__item
+									.advantage__ava.point__ava
+										img.advantage__pic(src='./assets/img/icons/big_truck.png' alt='большой грузовик')
+									.advantage__def.point__def Выполняем заказы любой величины
+								
+								li.advantage__item.point__item
+									.advantage__ava.point__ava
+										img.advantage__pic(src='./assets/img/icons/brick.png' alt='кирпичи')
+									.advantage__def.point__def Широкий ассортимент кирпича
+								
+								li.advantage__item.point__item
+									.advantage__ava.point__ava
+										img.advantage__pic(src='./assets/img/icons/factory.png' alt='завод')
+									.advantage__def.point__def Работаем напрямую с заводом
+								
+								li.advantage__item.point__item
+									.advantage__ava.point__ava
+										img.advantage__pic(src='./assets/img/icons/curier.png' alt='доставка')
+									.advantage__def.point__def Быстрая доставка в кратчайшие сроки
+								
+								li.advantage__item.point__item
+									.advantage__ava.point__ava
+										img.advantage__pic(src='./assets/img/icons/proffesional.png' alt='профессионал')
+									.advantage__def.point__def Большой опыт работы
+
+					//======our partners==========
+					section.partners
+						.container
+							h2.section_title Наши партнеры
+							ul.partner__list
+								li.partner__item
+									img.partner__logo(src='./assets/img/partner1.png' alt='лого Кощаковский КЗ')
+								li.partner__item
+									img.partner__logo(src='./assets/img/partner2.png' alt='лого Воткинский КЗ')
+								li.partner__item
+									img.partner__logo(src='./assets/img/partner3.png' alt='лого Ключищинская керамика')
+								li.partner__item
+									img.partner__logo(src='./assets/img/partner4.png' alt='лого Ак Барс Керамик')
+					
+					//========our projects========
+					section.projects#obj
+						.overlay_w
+							.container
+								h2.section_title Реализованные объекты
+								.projects__list.fotorama(data-width='800' data-ratio='1.4' data-transition='crossfade' data-loop='true' data-autoplay='4500' data-arrows='false')
+									.projects__item
+										img.project__img(src='./assets/img/project1.jpg' alt='Казанская международная школа на ул.Мавлютова' 					)
+										.projects__def Казанская международная школа на ул. Мавлютова
+									.projects__item
+										img.project__img(src='./assets/img/project2.jpg' alt='Казанская международная школа на ул.Мавлютова' )
+										.projects__def Казанская международная школа на ул. Мавлютова
+									.projects__item
+										img.project__img(src='./assets/img/project3.jpg' alt='Казанская международная школа на ул.Федосеевская' )
+										.projects__def Казанская международная школа на ул. Федосеевская
+									.projects__item
+										img.project__img(src='./assets/img/project4.jpg' alt='Казанская международная школа на ул.Федосеевская' )
+										.projects__def Казанская международная школа на ул. Федосеевская
+					
+					//========difficulty==========
+					section.difficulty
+						.container
+							h2.difficulty.why_we_title Затрудняетесь с выбором?
+							.difficulty.why_we_text Оставьте контактные данные и менеджеры ООО «КЕРАМИКА» перезвонят Вам в ближайшее время
+							a.contact_btn(href='#') Оставить заявку
+
+footer.footer#contacts
+	.overlay
+		.container
+			section.contacts
+				h2.contacts__title Контакты
+				.company__name ООО «КЕРАМИКА»
+				.company__ofice Офис продаж: 
+					span г.Казань, ул.Фучика, 99а
+				.company__base Склад: 
+					span г.Казань, ул.Седова, 2
+				.company__email e-mail: 
+					span keramika.kazan@mail.ru
+				.company__phone тел: 
+					span 8(843) 2-530-560
+				.company__shedule Работаем: 
+					span без выходных, с 8:00-22:00
+				.post_scriptum (заявки с сайта принимаются круглосуточно)
+
+			section.map
+				h2.map__title Склад кирпича по адресу: ул.Седова, 2
+				.map__block
+
+
+#feedback.modal.close
+	.popup_win
+		a.btn_close(href='#') Закрыть
+			i.fa.fa-close
+		form.feedback_form(name='modal_form' method='post' action='#')
+			h3.form_title Заказать звонок
+			p.form_text  *Ваши данные останутся строго конфиденциальными
+			input.name(name='name' type='text' placeholder='Введите имя' size='30' required)
+			input.email(name='email' type='email' placeholder='Введите e-mail' size='50' required)
+			input.phone(name='phone' type='text' placeholder='Введите телефон' size='20' required)
+			button.send_btn(type='submit' name='send_btn') Заказать
+
+#win.modal.close
+	.popup_win
+		a.btn_close(href='#') Закрыть
+			i.fa.fa-close
+		.popup_message Спасибо за заявку!

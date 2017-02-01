@@ -1,0 +1,556 @@
+$mainColor: #d77a58;
+$hoverColor: #C26F51;
+$accentColor1: #84C04F;
+$footer_heiht: -300px;
+$base_font: 14px;
+$lightFont: #fff;
+
+@import 'common/fonts';
+@import 'common/func';
+@import 'common/fotorama';
+@import 'common/adjusment';
+
+
+body {
+	font-size: $base_font;	
+	font-family: 'open_sansregular',Arial, Helvetica,sans-serif;
+}
+
+//=============header==========================
+.header {
+	color: $lightFont;
+	font-family: 'open_sansbold';
+	background-image: url(../img/bg1.jpg);
+	background-size: 45%;
+	.container {		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.company_logo {
+	text-align: center;	
+}
+
+.main_title{
+	width:54%;	
+	text-align: center;
+	font-size: 38px;
+}
+
+.company_contacts {
+	width: 26%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.call_title {	
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.company_phone {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.contact_btn {
+	padding: 10px 15px;
+	background-color: $mainColor;
+	border-radius: 2px;
+	color: $lightFont;
+	outline: #fff;
+	font-family: 'open_sansbold';
+	font-size: 18px;
+	margin-bottom:10px;
+	&:hover,
+	&:active,
+	&:visited {
+		color: $lightFont;		
+	}
+	&:hover {
+		background-color: $hoverColor;
+	}
+
+}
+
+.post_scriptum{
+	font-family: 'open_sansregular';
+	font-style: 16px;
+}
+
+//============navigation=================
+.main_menu {
+	background-color: $mainColor;
+	color: $lightFont;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	.container {
+		padding: 0 10px;
+	}
+}
+
+.menu__list{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.menu_item {
+	width: 100%;
+	height: 100%;
+}
+
+.menu__link {
+	width: 100%;
+	height: 100%;
+	color: $lightFont;
+	font-size: 18px;
+	border-bottom: 2px solid transparent;
+	&:hover {
+		border-bottom: 2px solid $lightFont;
+	}
+}
+//==============slider=======================
+.slider_section {
+	position: relative;	
+}
+
+.slider__btn {
+	position: absolute;
+	padding: 15px;	
+	font-size: 20px;
+	z-index: 12;
+	top: 65%;
+	left: 45%;
+	}
+
+.slider__item,
+.slider_img{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(#000,0.4);
+	z-index: 10;
+	display: flex;
+}
+
+.slider_text{
+	color: $lightFont;
+	font-family: 'open_sanslight';
+	font-size: 36px;
+	margin: 190px auto auto;
+}
+//========assortment================
+.section_title {
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.assortment {
+	.section_title {
+		margin-bottom: 5px;
+	}
+}
+
+.section_title_ps{
+	font-size: $base_font;
+	text-align: center;
+	margin-bottom: 35px;	
+}
+
+.assort__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.assort__item {
+	width: 24%;
+	border: 1px solid #858585;
+	padding: 15px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	font-family: 'open_sansbold';
+	margin-bottom: 50px;
+	border-radius: 2px;
+	}
+//=====about bricks===========================
+.brick_name {
+	align-self: center;
+	font-size: 16px;	
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.brick_ava {
+	align-self: center;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	display: flex;
+}
+
+.brick_pic {
+	align-self: center;	
+	width:150px;
+	margin: auto;	
+}
+
+.brick_mark,
+.brick_color,
+.brick_size,
+.brick_number,
+.brick_temperature,
+.brick_manufacturer,
+.brick_price				{
+	margin-bottom: 5px;	
+	span {
+		font-family: 'open_sansregular';
+	}
+}
+
+.brick_price {
+		span {
+		font-size: 16px;
+		font-family: 'open_sansbold';
+		color: #cb0808;
+	}	
+}
+
+.brick_price_ps {
+	font-family: 'open_sansregular';
+	color: #cb0808;
+	margin-bottom: 20px;
+}
+
+.contact_btn_assort {
+	align-self: center;
+	background-color: $accentColor1;
+}
+//=======works scheme============================
+.point__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.point__item {
+	text-align: center;	
+	position: relative;
+	line-height: 1.5;
+}
+
+.scheme__item {
+	width: 15%;	
+	&:after {
+		content: ' ';
+		width: 70px;
+		height: 70px;
+		background-image: url(../img/icons/arrow.png);
+		position: absolute;
+		top: 10%;
+		right: -45%;
+	}
+	&:last-child:after {
+		width: 0;
+		height: 0;
+	}
+}
+
+.point__ava{
+	width: 65px;
+	height: 65px;
+	margin: 0 auto 10px;
+}
+
+.point__pic {
+	width: 100%;
+}
+
+//=========payment method==================
+.payment__item {
+	width: 20%;
+}
+
+.payment__title {
+	margin-bottom: 10px;
+}
+
+//========why we=====================
+.why_we {	
+	text-align: center;
+	background-image: url(../img/bg2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;	
+}
+
+	.overlay_w {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: rgba(#fff,0.6);
+	padding: 50px 0;
+	}
+	
+
+.why_we__bg {
+	width: 100%;
+}
+
+.why_we__btn {
+		margin-bottom: 50px;
+}
+
+.why_we_title {
+	margin-bottom: 50px;
+	font-size: 28px;
+	font-family: 'open_sanslight';
+}
+
+.why_we_text {
+	font-size: 22px;
+	font-family: 'open_sansbold';
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+//========our advantage===========
+.advantage__list {
+	flex-wrap: wrap;
+}
+
+.advantage__item {
+	width: 21%;
+	margin-bottom: 20px;
+}
+
+//======our partners============
+.partner__list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.partner__logo {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+	//========our projects========
+.projects {
+	text-align: center;
+	background-image: url(../img/bg3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}	
+
+.projects__list{
+	width: 70%;
+	height: 450px;
+	margin: 0 auto;
+}
+
+.project__img{
+	margin-bottom: 15px;
+}
+
+.projects__def {
+	font-size: 20px;
+	font-family: 'open_sansregular';
+}
+//========difficulty==========
+.difficulty {
+		text-align: center;
+	}
+
+//=========footer============
+.footer {
+	background-image: url(../img/bg1.jpg);
+	background-size: 45%;
+	color: $lightFont;
+	font-size: 16px;	
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+}	
+
+.contacts {
+	width: 30%;
+	margin-bottom: 0;
+	font-family: 'open_sansbold';
+	span {
+		font-family: 'open_sansregular';
+	}
+}
+
+.contacts__title {
+	font-size: 30px;
+	font-family: 'open_sansbold';
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.company__name,
+.company__ofice,
+.company__base,
+.company__email,
+.company__phone,
+.company__shedule,
+.post_scriptum     {
+	margin-bottom: 15px;
+}
+
+.map__title {
+	text-align: center;
+	font-family: 'open_sanslight';
+}
+
+.map__block {
+	width: 500px;
+	height: 240px;
+}
+
+//====================modal windows================
+.modal{
+	position: fixed;
+	background-color: rgba(#000,.8);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 15;
+	 display: flex;
+	 flex-direction: column;	
+}
+
+.btn_close   {		
+		z-index: 20;
+		align-self: flex-end;		
+		margin: 15px 15px 0 0;
+		font-size: 0;
+		
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;  
+}
+.fa-close:before
+{
+  content: "\f00d";
+}
+
+.fa-close {
+	color: #000;
+	font-size: 2rem;
+}
+
+.close {
+	display: none;
+}
+
+.popup_win {
+	max-width: 35%;
+	background-color: #fff;
+	margin: auto;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	border-radius: 3px;
+	.btn_close{
+		margin: 0 0 15px;
+	}
+	.fa-close{
+		font-size: 1.5rem;
+	}
+
+	.feedback_form {	
+		margin: auto;
+		margin-bottom: 15px;
+		font-size: 1.142rem;
+	}
+
+}
+
+.popup_message {	
+	font-size: 1.5rem;
+	font-family: 'open_sansregular';
+	margin: 0 20px 40px;
+}
+
+.feedback_form {	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: auto;
+	margin-left: auto;
+
+	
+}
+
+.form_title{
+	font-family: 'open_sanslight';
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 15px;
+	line-height: 1;
+}
+
+.form_text {
+	font-size: 15px;
+	width: 100%;
+	line-height: 1.4;
+	margin: 0 0 20px;
+	text-align: center;	
+}
+
+input {
+	width: 85%;
+	padding: 7px;
+	margin-bottom: 30px;
+	outline: none;
+	color: black;
+	font-size: 16px;
+}
+
+.send_btn {
+	width: 130px;
+	padding: 7px;
+	padding-bottom: 9px;
+	color: $lightFont;
+	font-family: 'open_sansregular';
+	font-size: 20px;
+	background-color: $mainColor;
+	outline: none;
+	border: none;	
+	border-radius: 2px;
+
+	&:hover,
+	&:active {
+		background-color: $hoverColor;		
+	}
+}

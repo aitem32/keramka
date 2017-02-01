@@ -1,0 +1,5 @@
+//переводим пиксели в ремы
+$base_font: 14px;
+@function px_rem($pix) {
+	@return $pix / $base_font +0rem;
+} 
